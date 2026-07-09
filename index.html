@@ -31,8 +31,7 @@
 
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/syne-var.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-var.woff2" crossorigin>
-  <link rel="preload" as="image" media="(min-width: 860px)" imagesrcset="/assets/img/hero-home-800.avif 800w, /assets/img/hero-home-1200.avif 1200w, /assets/img/hero-home-1600.avif 1600w" imagesizes="44vw" fetchpriority="high">
-  <link rel="preload" as="image" media="(max-width: 859px)" href="/assets/img/hero-home-800.jpg" fetchpriority="high">
+  <link rel="preload" as="image" imagesrcset="/assets/img/hero-warm-480.avif 480w, /assets/img/hero-warm-800.avif 800w, /assets/img/hero-warm-1200.avif 1200w, /assets/img/hero-warm-1600.avif 1600w" imagesizes="(min-width: 860px) 44vw, 100vw" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/p50.css">
 
   <script type="application/ld+json">
@@ -129,14 +128,14 @@
   }
   </script>
 </head>
-<body data-nav="hero">
+<body data-nav="solid">
 
 <!-- p50:nav -->
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="nav">
   <div class="container nav__inner">
     <a class="nav__logo" href="/" aria-label="Project 50 home">
-      <img class="logo-a" src="/assets/img/logo-wordmark.svg" alt="Project 50" width="709" height="160">
+      <img class="logo-a" src="/assets/img/logo-wordmark-pitch.svg" alt="Project 50" width="709" height="160">
       <img class="logo-b" src="/assets/img/logo-monogram.svg" alt="" aria-hidden="true" width="500" height="500">
     </a>
     <ul class="nav__links">
@@ -166,16 +165,16 @@
 <main id="main">
 
   <!-- Hero: the 50 ledger -->
-  <section class="hero surface-pitch" aria-label="Introduction">
+  <section class="hero" aria-label="Introduction">
     <span class="hero__fifty" aria-hidden="true">50</span>
     <div class="hero__media">
       <picture>
-        <source type="image/avif" srcset="/assets/img/hero-home-480.avif 480w, /assets/img/hero-home-800.avif 800w, /assets/img/hero-home-1200.avif 1200w, /assets/img/hero-home-1600.avif 1600w" sizes="44vw">
-        <source type="image/webp" srcset="/assets/img/hero-home-480.webp 480w, /assets/img/hero-home-800.webp 800w, /assets/img/hero-home-1200.webp 1200w, /assets/img/hero-home-1600.webp 1600w" sizes="44vw">
-        <img src="/assets/img/hero-home-1200.jpg" srcset="/assets/img/hero-home-480.jpg 480w, /assets/img/hero-home-800.jpg 800w, /assets/img/hero-home-1200.jpg 1200w, /assets/img/hero-home-1600.jpg 1600w" sizes="44vw" alt="Athlete training on an outdoor track" width="1600" height="1066" fetchpriority="high">
+        <source type="image/avif" srcset="/assets/img/hero-warm-480.avif 480w, /assets/img/hero-warm-800.avif 800w, /assets/img/hero-warm-1200.avif 1200w, /assets/img/hero-warm-1600.avif 1600w" sizes="(min-width: 860px) 44vw, 100vw">
+        <source type="image/webp" srcset="/assets/img/hero-warm-480.webp 480w, /assets/img/hero-warm-800.webp 800w, /assets/img/hero-warm-1200.webp 1200w, /assets/img/hero-warm-1600.webp 1600w" sizes="(min-width: 860px) 44vw, 100vw">
+        <img src="/assets/img/hero-warm-1200.jpg" srcset="/assets/img/hero-warm-480.jpg 480w, /assets/img/hero-warm-800.jpg 800w, /assets/img/hero-warm-1200.jpg 1200w, /assets/img/hero-warm-1600.jpg 1600w" sizes="(min-width: 860px) 44vw, 100vw" alt="Woman stretching in a warm, sunlit room" width="1600" height="2000" fetchpriority="high">
       </picture>
     </div>
-    <div class="container hero__grid" style="--hero-mobile: url('/assets/img/hero-home-800.jpg')">
+    <div class="container hero__grid">
       <div class="hero__content">
         <p class="hero__kicker"><span class="chip">Strength for life</span></p>
         <h1 class="display">Build what lasts.</h1>
@@ -225,15 +224,15 @@
   </section>
 
   <!-- 02 Founder -->
-  <section class="section surface-pitch" id="founder" aria-labelledby="founder-title">
+  <section class="section" id="founder" aria-labelledby="founder-title">
     <div class="container">
       <p class="ledger-index"><span class="no">02</span> / Founder</p>
       <div class="grid founder">
         <div class="founder__media reveal">
           <picture>
-            <source type="image/avif" srcset="/assets/img/founder-480.avif 480w, /assets/img/founder-800.avif 800w, /assets/img/founder-1200.avif 1200w" sizes="(min-width: 860px) 40vw, 100vw">
-            <source type="image/webp" srcset="/assets/img/founder-480.webp 480w, /assets/img/founder-800.webp 800w, /assets/img/founder-1200.webp 1200w" sizes="(min-width: 860px) 40vw, 100vw">
-            <img src="/assets/img/founder-800.jpg" srcset="/assets/img/founder-480.jpg 480w, /assets/img/founder-800.jpg 800w, /assets/img/founder-1200.jpg 1200w" sizes="(min-width: 860px) 40vw, 100vw" alt="Coaching session in progress" width="1600" height="2400" loading="lazy" decoding="async">
+            <source type="image/avif" srcset="/assets/img/founder-warm-480.avif 480w, /assets/img/founder-warm-800.avif 800w, /assets/img/founder-warm-1200.avif 1200w" sizes="(min-width: 860px) 40vw, 100vw">
+            <source type="image/webp" srcset="/assets/img/founder-warm-480.webp 480w, /assets/img/founder-warm-800.webp 800w, /assets/img/founder-warm-1200.webp 1200w" sizes="(min-width: 860px) 40vw, 100vw">
+            <img src="/assets/img/founder-warm-800.jpg" srcset="/assets/img/founder-warm-480.jpg 480w, /assets/img/founder-warm-800.jpg 800w, /assets/img/founder-warm-1200.jpg 1200w" sizes="(min-width: 860px) 40vw, 100vw" alt="Jo coaching a client through an exercise" width="1600" height="1068" loading="lazy" decoding="async">
           </picture>
         </div>
         <div class="founder__body reveal d1">
@@ -354,23 +353,23 @@
       <div class="grid mosaic">
         <figure class="m1 reveal">
           <picture>
-            <source type="image/avif" srcset="/assets/img/mosaic-1-480.avif 480w, /assets/img/mosaic-1-800.avif 800w" sizes="(min-width: 660px) 40vw, 100vw">
-            <source type="image/webp" srcset="/assets/img/mosaic-1-480.webp 480w, /assets/img/mosaic-1-800.webp 800w" sizes="(min-width: 660px) 40vw, 100vw">
-            <img src="/assets/img/mosaic-1-800.jpg" srcset="/assets/img/mosaic-1-480.jpg 480w, /assets/img/mosaic-1-800.jpg 800w" sizes="(min-width: 660px) 40vw, 100vw" alt="Athlete in motion during hurdle training" width="1600" height="1065" loading="lazy" decoding="async">
+            <source type="image/avif" srcset="/assets/img/mosaic-coach-480.avif 480w, /assets/img/mosaic-coach-800.avif 800w" sizes="(min-width: 660px) 40vw, 100vw">
+            <source type="image/webp" srcset="/assets/img/mosaic-coach-480.webp 480w, /assets/img/mosaic-coach-800.webp 800w" sizes="(min-width: 660px) 40vw, 100vw">
+            <img src="/assets/img/mosaic-coach-800.jpg" srcset="/assets/img/mosaic-coach-480.jpg 480w, /assets/img/mosaic-coach-800.jpg 800w" sizes="(min-width: 660px) 40vw, 100vw" alt="Coach guiding a resistance-band exercise" width="1600" height="2400" loading="lazy" decoding="async">
           </picture>
         </figure>
         <figure class="m2 reveal d1">
           <picture>
-            <source type="image/avif" srcset="/assets/img/mosaic-2-480.avif 480w, /assets/img/mosaic-2-800.avif 800w, /assets/img/mosaic-2-1200.avif 1200w" sizes="(min-width: 660px) 55vw, 100vw">
-            <source type="image/webp" srcset="/assets/img/mosaic-2-480.webp 480w, /assets/img/mosaic-2-800.webp 800w, /assets/img/mosaic-2-1200.webp 1200w" sizes="(min-width: 660px) 55vw, 100vw">
-            <img src="/assets/img/mosaic-2-800.jpg" srcset="/assets/img/mosaic-2-480.jpg 480w, /assets/img/mosaic-2-800.jpg 800w, /assets/img/mosaic-2-1200.jpg 1200w" sizes="(min-width: 660px) 55vw, 100vw" alt="Athlete stretching and preparing to train" width="1600" height="1066" loading="lazy" decoding="async">
+            <source type="image/avif" srcset="/assets/img/mosaic-1-480.avif 480w, /assets/img/mosaic-1-800.avif 800w, /assets/img/mosaic-1-1200.avif 1200w" sizes="(min-width: 660px) 55vw, 100vw">
+            <source type="image/webp" srcset="/assets/img/mosaic-1-480.webp 480w, /assets/img/mosaic-1-800.webp 800w, /assets/img/mosaic-1-1200.webp 1200w" sizes="(min-width: 660px) 55vw, 100vw">
+            <img src="/assets/img/mosaic-1-800.jpg" srcset="/assets/img/mosaic-1-480.jpg 480w, /assets/img/mosaic-1-800.jpg 800w, /assets/img/mosaic-1-1200.jpg 1200w" sizes="(min-width: 660px) 55vw, 100vw" alt="Athlete in motion during hurdle training" width="1600" height="1065" loading="lazy" decoding="async">
           </picture>
         </figure>
         <figure class="m3 reveal">
           <picture>
-            <source type="image/avif" srcset="/assets/img/mosaic-3-480.avif 480w, /assets/img/mosaic-3-800.avif 800w" sizes="(min-width: 660px) 40vw, 100vw">
-            <source type="image/webp" srcset="/assets/img/mosaic-3-480.webp 480w, /assets/img/mosaic-3-800.webp 800w" sizes="(min-width: 660px) 40vw, 100vw">
-            <img src="/assets/img/mosaic-3-800.jpg" srcset="/assets/img/mosaic-3-480.jpg 480w, /assets/img/mosaic-3-800.jpg 800w" sizes="(min-width: 660px) 40vw, 100vw" alt="Athlete resting on the track between sets" width="1600" height="1600" loading="lazy" decoding="async">
+            <source type="image/avif" srcset="/assets/img/mosaic-joy-480.avif 480w, /assets/img/mosaic-joy-800.avif 800w" sizes="(min-width: 660px) 40vw, 100vw">
+            <source type="image/webp" srcset="/assets/img/mosaic-joy-480.webp 480w, /assets/img/mosaic-joy-800.webp 800w" sizes="(min-width: 660px) 40vw, 100vw">
+            <img src="/assets/img/mosaic-joy-800.jpg" srcset="/assets/img/mosaic-joy-480.jpg 480w, /assets/img/mosaic-joy-800.jpg 800w" sizes="(min-width: 660px) 40vw, 100vw" alt="Older adult mid-movement, arms out in a sports hall" width="1600" height="1066" loading="lazy" decoding="async">
           </picture>
         </figure>
         <p class="mosaic__mantra reveal d1">Train for life, not the mirror.</p>
@@ -386,7 +385,7 @@
   </section>
 
   <!-- 06 FAQ -->
-  <section class="section surface-pitch" id="faq" aria-labelledby="faq-title">
+  <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <p class="ledger-index"><span class="no">06</span> / Questions</p>
       <div class="grid">

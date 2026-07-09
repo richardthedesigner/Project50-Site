@@ -12,13 +12,21 @@ const MONO = new Set(['hero-home', 'hero-story', 'hero-programmes', 'hero-contac
 
 mkdirSync(OUT, { recursive: true })
 
+// Landscape sources that render in tall columns get a 4:5 crop baked in
+const TALL_CROP = new Set(['hero-warm'])
+
 for (const file of readdirSync(SRC).filter(f => f.endsWith('.jpg'))) {
   const name = basename(file, '.jpg')
   const src = sharp(join(SRC, file)).rotate()
   const meta = await src.metadata()
   for (const w of WIDTHS) {
     if (w > meta.width) continue
-    let img = sharp(join(SRC, file)).rotate().resize({ width: w })
+    let img = sharp(join(SRC, file)).rotate()
+    if (TALL_CROP.has(name)) {
+      img = img.resize({ width: w, height: Math.round(w * 1.25), fit: 'cover', position: sharp.strategy.attention })
+    } else {
+      img = img.resize({ width: w })
+    }
     if (MONO.has(name)) img = img.grayscale().linear(1.08, -8) // slight contrast lift
     await img.clone().avif({ quality: 52 }).toFile(join(OUT, `${name}-${w}.avif`))
     await img.clone().webp({ quality: 75 }).toFile(join(OUT, `${name}-${w}.webp`))
