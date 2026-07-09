@@ -1,320 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Get in touch with Project 50. Book a consultation or sign up for our newsletter.">
-<title>Contact - Project 50</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-<style>
-    :root {
-      --chalk-line: #F9F7EF;
-      --summer-tape: #FDBB30;
-      --pitch: #111111;
-      --court-clay: #D98F3D;
-      --track-blue: #516B8B;
-      --steel-breath: #717271;
-      --divider: rgba(17,17,17,0.1);
-      --divider-light: rgba(249,247,239,0.15);
-      --font-primary: 'Plus Jakarta Sans', sans-serif;
-      --font-display: 'Syne', sans-serif;
-      --space-xs: 0.5rem; --space-sm: 1rem; --space-md: 1.5rem;
-      --space-lg: 3rem; --space-xl: 5rem; --space-2xl: 8rem;
-      --container-max: 1200px; --container-pad: 1.5rem;
-    }
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-    body{font-family:var(--font-primary);font-weight:400;font-size:1rem;line-height:1.65;color:var(--pitch);background-color:var(--chalk-line);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-    img{max-width:100%;height:auto;display:block}
-    a{color:inherit;text-decoration:none}
-    button{font-family:inherit;cursor:pointer;border:none;background:none}
-    .container{max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    .skip-link{position:absolute;top:-100%;left:1rem;background:var(--summer-tape);color:var(--pitch);padding:0.75rem 1.5rem;font-weight:600;z-index:1000}
-    .skip-link:focus{top:0}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Coaching Consultation in Cheltenham | Project 50</title>
+  <meta name="description" content="Book a consultation with Project 50 in Cheltenham, Gloucestershire. Ask about 1:1 strength coaching, group programmes or digital training. Replies within 48 hours.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://www.project50.uk/contact.html">
 
-    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 0;background:linear-gradient(to bottom,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 100%);transition:background .3s ease,box-shadow .3s ease}
-    .nav.scrolled{background:rgba(249,247,239,0.98)!important;box-shadow:0 1px 0 var(--divider)}
-    .nav__inner{display:flex;justify-content:space-between;align-items:center}
-    .nav__links{display:none;list-style:none;gap:2rem;align-items:center}
-    .nav__links a{font-size:.875rem;font-weight:500;letter-spacing:.01em}
-    .nav__cta{display:inline-block;background-color:var(--pitch);color:var(--chalk-line)!important;padding:.6rem 1.5rem;font-size:.8125rem!important;font-weight:600!important;letter-spacing:.04em;text-transform:uppercase}
-    .nav__cta:hover,.nav__cta:focus-visible{background-color:var(--track-blue);color:var(--chalk-line)!important}
-    .nav__toggle{display:flex;flex-direction:column;gap:5px;padding:4px}
-    .nav__toggle span{display:block;width:24px;height:2px;background-color:var(--pitch);transition:transform .2s ease,opacity .2s ease}
-    .nav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .nav__toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
-    .nav__toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    .nav__mobile{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background-color:var(--chalk-line);z-index:99;padding:6rem var(--container-pad) 2rem}
-    .nav__mobile.open{display:flex;flex-direction:column;justify-content:center}
-    .nav__mobile a{display:block;font-family:var(--font-display);font-size:2rem;font-weight:700;padding:.75rem 0;color:var(--pitch);border-bottom:1px solid var(--divider)}
-    .nav__mobile a:last-child{border-bottom:none}
-    @media(min-width:768px){.nav__links{display:flex}.nav__toggle{display:none}}
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;background-color:var(--pitch);overflow:hidden}
-    .hero__bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1764173040171-57f79264b358?q=80&w=900&auto=format&fit=crop');background-size:cover;background-position:center 30%;filter:grayscale(100%) contrast(1.1);opacity:.5}
-    .hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(17,17,17,.95) 0%,rgba(17,17,17,.6) 40%,rgba(17,17,17,.2) 100%)}
-    .hero__content{position:relative;z-index:2;padding:0 var(--container-pad) 4rem;max-width:var(--container-max);margin:0 auto;width:100%}
-    .hero__tag{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--summer-tape);margin-bottom:var(--space-md)}
-    .hero__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2.5rem,6vw,5rem);line-height:1.05;color:var(--chalk-line);margin-bottom:var(--space-md);max-width:14ch}
-    .hero__subtitle{font-size:clamp(1rem,1.5vw,1.25rem);font-weight:300;line-height:1.6;color:rgba(249,247,239,.75);max-width:48ch;margin-bottom:var(--space-lg)}
-    .hero__actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
-    .hero__scroll{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:2;color:rgba(249,247,239,.4);font-size:.6875rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;text-align:center}
-    .hero__scroll::after{content:'';display:block;width:1px;height:32px;background-color:rgba(249,247,239,.25);margin:.5rem auto 0}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Project 50">
+  <meta property="og:title" content="Book a Coaching Consultation in Cheltenham | Project 50">
+  <meta property="og:description" content="Start a conversation about 1:1 coaching, group programmes or digital training. Replies within 48 hours.">
+  <meta property="og:url" content="https://www.project50.uk/contact.html">
+  <meta property="og:image" content="https://www.project50.uk/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Book a Coaching Consultation in Cheltenham | Project 50">
+  <meta name="twitter:description" content="Start a conversation about 1:1 coaching, group programmes or digital training.">
+  <meta name="twitter:image" content="https://www.project50.uk/og.png">
 
-    .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-primary);font-weight:600;font-size:.8125rem;letter-spacing:.06em;text-transform:uppercase;padding:1rem 2rem;transition:background-color .2s ease,color .2s ease;white-space:nowrap}
-    .btn:focus-visible{outline:3px solid var(--summer-tape);outline-offset:2px}
-    .btn--primary{background-color:var(--summer-tape);color:var(--pitch)}
-    .btn--primary:hover{background-color:#e5a820}
-    .btn--outline{border:1.5px solid rgba(249,247,239,.4);color:var(--chalk-line);background:transparent}
-    .btn--outline:hover{border-color:var(--chalk-line);background-color:rgba(249,247,239,.08)}
-    .btn--dark{background-color:var(--pitch);color:var(--chalk-line)}
-    .btn--dark:hover{background-color:var(--track-blue)}
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/syne-var.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-var.woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/p50.css">
 
-    .positioning{padding:var(--space-2xl) 0;border-bottom:1px solid var(--divider)}
-    .positioning__inner{display:grid;grid-template-columns:1fr;gap:var(--space-lg)}
-    .positioning__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--steel-breath);margin-bottom:var(--space-sm)}
-    .positioning__headline{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,3.5vw,2.75rem);line-height:1.15;color:var(--pitch);max-width:20ch}
-    .positioning__text{font-size:1.0625rem;line-height:1.75;color:var(--steel-breath);max-width:60ch}
-    .positioning__text p+p{margin-top:1.25rem}
-    .positioning__rule{display:flex;align-items:center;gap:1rem;margin-top:var(--space-md)}
-    .positioning__rule-line{width:48px;height:2px;background-color:var(--summer-tape)}
-    .positioning__rule-text{font-size:.8125rem;font-weight:600;letter-spacing:.04em;color:var(--pitch)}
-    @media(min-width:768px){.positioning__inner{grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:start}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.project50.uk/" },
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.project50.uk/contact.html" }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "url": "https://www.project50.uk/contact.html",
+        "about": {
+          "@type": "HealthClub",
+          "@id": "https://www.project50.uk/#business",
+          "name": "Project 50",
+          "url": "https://www.project50.uk/",
+          "email": "hello@project50.co.uk",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cheltenham",
+            "addressRegion": "Gloucestershire",
+            "addressCountry": "GB"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-nav="solid">
 
-    .founder{padding:var(--space-2xl) 0;background-color:var(--pitch);color:var(--chalk-line)}
-    .founder__inner{display:grid;grid-template-columns:1fr;gap:var(--space-lg)}
-    .founder__image-wrap{position:relative;overflow:hidden;aspect-ratio:4/5;max-height:560px}
-    .founder__image-wrap img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.05)}
-    .founder__image-tag{position:absolute;bottom:0;left:0;background-color:var(--summer-tape);color:var(--pitch);font-size:.6875rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.5rem 1rem}
-    .founder__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--summer-tape);margin-bottom:var(--space-sm)}
-    .founder__title{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.15;margin-bottom:var(--space-md)}
-    .founder__text{font-size:1rem;line-height:1.75;color:rgba(249,247,239,.7)}
-    .founder__text p+p{margin-top:1.25rem}
-    .founder__credentials{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:var(--space-md)}
-    .founder__credential{font-size:.75rem;font-weight:500;letter-spacing:.02em;padding:.5rem 1rem;border:1px solid var(--divider-light);color:rgba(249,247,239,.6)}
-    @media(min-width:768px){.founder__inner{grid-template-columns:5fr 6fr;gap:var(--space-xl);align-items:center}}
-
-    .values{padding:var(--space-2xl) 0;border-bottom:1px solid var(--divider)}
-    .values__header{text-align:center;margin-bottom:var(--space-xl)}
-    .values__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--steel-breath);margin-bottom:var(--space-sm)}
-    .values__headline{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.15;color:var(--pitch)}
-    .values__grid{display:grid;grid-template-columns:1fr;gap:1px;background-color:var(--divider);border:1px solid var(--divider)}
-    .values__card{background-color:var(--chalk-line);padding:var(--space-md) var(--space-md) var(--space-lg)}
-    .values__card-num{font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--summer-tape);margin-bottom:var(--space-sm)}
-    .values__card-title{font-family:var(--font-primary);font-weight:700;font-size:1.0625rem;line-height:1.3;color:var(--pitch);margin-bottom:.5rem}
-    .values__card-text{font-size:.875rem;line-height:1.65;color:var(--steel-breath)}
-    @media(min-width:480px){.values__grid{grid-template-columns:1fr 1fr}}
-    @media(min-width:960px){.values__grid{grid-template-columns:repeat(4,1fr)}}
-
-    .offer{padding:var(--space-2xl) 0;background-color:var(--pitch);color:var(--chalk-line)}
-    .offer__inner{display:grid;grid-template-columns:1fr;gap:var(--space-xl)}
-    .offer__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--summer-tape);margin-bottom:var(--space-sm)}
-    .offer__headline{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.15;margin-bottom:var(--space-md)}
-    .offer__desc{font-size:1rem;line-height:1.75;color:rgba(249,247,239,.65);max-width:50ch}
-    .offer__item{padding:var(--space-md) 0;border-bottom:1px solid var(--divider-light)}
-    .offer__item:first-child{border-top:1px solid var(--divider-light)}
-    .offer__item-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem}
-    .offer__item-title{font-weight:600;font-size:1.125rem;letter-spacing:-.01em}
-    .offer__item-tag{font-size:.6875rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--summer-tape);flex-shrink:0;margin-left:1rem}
-    .offer__item-text{font-size:.9375rem;line-height:1.65;color:rgba(249,247,239,.55);max-width:55ch}
-    @media(min-width:768px){.offer__inner{grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:start}.offer__header{position:sticky;top:6rem}}
-
-    .lifestyle{padding:var(--space-2xl) 0}
-    .lifestyle__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--steel-breath);margin-bottom:var(--space-lg);text-align:center}
-    .lifestyle__grid{display:grid;grid-template-columns:1fr;gap:1rem}
-    .lifestyle__img{overflow:hidden;position:relative}
-    .lifestyle__img img{width:100%;height:100%;object-fit:cover}
-    .lifestyle__img--tall{aspect-ratio:3/4}
-    .lifestyle__img--wide{aspect-ratio:16/9}
-    .lifestyle__img--square{aspect-ratio:1/1}
-    .lifestyle__img--bw img{filter:grayscale(100%) contrast(1.1)}
-    .lifestyle__caption{font-family:var(--font-display);font-weight:700;font-size:clamp(1.25rem,2.5vw,1.75rem);line-height:1.2;color:var(--pitch);text-align:center;padding:var(--space-lg) var(--space-md);display:flex;align-items:center;justify-content:center;background-color:var(--chalk-line);border:1px solid var(--divider)}
-    @media(min-width:768px){.lifestyle__grid{grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto}.lifestyle__img--tall{grid-row:span 2}}
-
-    .faq{padding:var(--space-2xl) 0;background-color:var(--pitch);color:var(--chalk-line)}
-    .faq__inner{display:grid;grid-template-columns:1fr;gap:var(--space-lg)}
-    .faq__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--summer-tape);margin-bottom:var(--space-sm)}
-    .faq__headline{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.15}
-    .faq__item{border-bottom:1px solid var(--divider-light)}
-    .faq__item:first-child{border-top:1px solid var(--divider-light)}
-    .faq__question{width:100%;text-align:left;padding:1.25rem 0;font-family:var(--font-primary);font-size:1rem;font-weight:600;color:var(--chalk-line);display:flex;justify-content:space-between;align-items:center;gap:1rem;cursor:pointer;background:none;border:none}
-    .faq__question:focus-visible{outline:2px solid var(--summer-tape);outline-offset:2px}
-    .faq__icon{width:20px;height:20px;flex-shrink:0;position:relative}
-    .faq__icon::before,.faq__icon::after{content:'';position:absolute;background-color:var(--summer-tape);top:50%;left:50%;transition:transform .2s ease}
-    .faq__icon::before{width:14px;height:1.5px;transform:translate(-50%,-50%)}
-    .faq__icon::after{width:1.5px;height:14px;transform:translate(-50%,-50%)}
-    .faq__item.open .faq__icon::after{transform:translate(-50%,-50%) rotate(90deg)}
-    .faq__answer{max-height:0;overflow:hidden;transition:max-height .3s ease}
-    .faq__answer-inner{padding:0 0 1.5rem;font-size:.9375rem;line-height:1.7;color:rgba(249,247,239,.6);max-width:55ch}
-    @media(min-width:768px){.faq__inner{grid-template-columns:1fr 1.5fr;gap:var(--space-xl);align-items:start}.faq__header{position:sticky;top:6rem}}
-
-    .cta{padding:var(--space-2xl) 0;text-align:center;border-bottom:1px solid var(--divider)}
-    .cta__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--summer-tape);margin-bottom:var(--space-md)}
-    .cta__headline{font-family:var(--font-display);font-weight:800;font-size:clamp(2rem,4vw,3.5rem);line-height:1.1;color:var(--pitch);margin-bottom:var(--space-md)}
-    .cta__text{font-size:1.0625rem;line-height:1.7;color:var(--steel-breath);max-width:48ch;margin:0 auto var(--space-lg)}
-    .cta__actions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
-
-    .footer{padding:var(--space-lg) 0 var(--space-md);background-color:var(--chalk-line)}
-    .footer__inner{display:grid;grid-template-columns:1fr;gap:var(--space-lg)}
-    .footer__logo{font-family:var(--font-display);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;color:var(--pitch);margin-bottom:.75rem}
-    .footer__logo span{color:var(--summer-tape)}
-    .footer__tagline{font-size:.875rem;line-height:1.6;color:var(--steel-breath);max-width:30ch}
-    .footer__cols{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-lg)}
-    .footer__col-title{font-size:.6875rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pitch);margin-bottom:.75rem}
-    .footer__col a{display:block;font-size:.875rem;color:var(--steel-breath);padding:.25rem 0;transition:color .2s ease}
-    .footer__col a:hover,.footer__col a:focus-visible{color:var(--pitch)}
-    .footer__bottom{margin-top:var(--space-lg);padding-top:var(--space-md);border-top:1px solid var(--divider);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
-    .footer__copy{font-size:.8125rem;color:var(--steel-breath)}
-    .footer__legal{display:flex;gap:1.5rem}
-    .footer__legal a{font-size:.8125rem;color:var(--steel-breath);transition:color .2s ease}
-    .footer__legal a:hover{color:var(--pitch)}
-    @media(min-width:768px){.footer__inner{grid-template-columns:1.5fr 2fr;gap:var(--space-xl)}.footer__cols{grid-template-columns:repeat(3,1fr)}}
-    /* SVG Logo transition */
-    .nav__logo{display:block;line-height:1}
-    .nav__logo-inner{position:relative;display:flex;align-items:center;height:36px;width:140px}
-    .nav__logo-wordmark{position:absolute;left:0;top:50%;transform:translateY(-50%);height:28px;width:auto;max-width:140px;opacity:1;transition:opacity .3s ease}
-    .nav__logo-monogram{position:absolute;left:0;top:50%;transform:translateY(-50%);height:32px;width:32px;opacity:0;transition:opacity .3s ease}
-    .nav.scrolled .nav__logo-wordmark{opacity:0;pointer-events:none}
-    .nav.scrolled .nav__logo-monogram{opacity:1}
-    .nav__links a{color:rgba(249,247,239,.9)!important;transition:color .2s ease}
-    .nav__links a:hover,.nav__links a:focus-visible{color:#fff!important}
-    .nav__cta{background-color:rgba(249,247,239,.15)!important;color:var(--chalk-line)!important;border:1px solid rgba(249,247,239,.4)!important}
-    .nav__cta:hover,.nav__cta:focus-visible{background-color:rgba(249,247,239,.28)!important}
-    .nav__toggle span{background-color:var(--chalk-line)!important}
-    .nav.scrolled .nav__links a{color:var(--pitch)!important}
-    .nav.scrolled .nav__links a:hover,.nav.scrolled .nav__links a:focus-visible{color:var(--track-blue)!important}
-    .nav.scrolled .nav__cta{background-color:var(--pitch)!important;color:var(--chalk-line)!important;border:none!important}
-    .nav.scrolled .nav__cta:hover{background-color:var(--track-blue)!important}
-    .nav.scrolled .nav__toggle span{background-color:var(--pitch)!important}
-    .nav__mobile a{color:var(--pitch)}
-  </style>
-<style>
-.page-hdr{padding:8rem 0 var(--space-xl);border-bottom:1px solid var(--divider)}
-.page-hdr--dark{background-color:var(--pitch);color:var(--chalk-line);border-bottom:none}
-.page-hdr__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--steel-breath);margin-bottom:var(--space-sm)}
-.page-hdr--dark .page-hdr__label{color:var(--summer-tape)}
-.page-hdr__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.1;max-width:18ch}
-.page-hdr__sub{font-size:1.0625rem;line-height:1.7;color:var(--steel-breath);max-width:55ch;margin-top:var(--space-md)}
-.page-hdr--dark .page-hdr__sub{color:rgba(249,247,239,.65)}
-.sec{padding:var(--space-2xl) 0}
-.sec--dark{background-color:var(--pitch);color:var(--chalk-line)}
-.sec--border{border-bottom:1px solid var(--divider)}
-.sec__label{font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--steel-breath);margin-bottom:var(--space-sm)}
-.sec--dark .sec__label{color:var(--summer-tape)}
-.sec__hl{font-family:var(--font-display);font-weight:700;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.15;color:var(--pitch);margin-bottom:var(--space-md)}
-.sec--dark .sec__hl{color:var(--chalk-line)}
-.split{display:grid;grid-template-columns:1fr;gap:var(--space-lg)}
-@media(min-width:768px){.split{grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center}}
-.prose{font-size:1.0625rem;line-height:1.75;color:var(--steel-breath)}
-.prose p+p{margin-top:1.25rem}
-.prose--lt{color:rgba(249,247,239,.7)}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background-color:var(--divider-light);border:1px solid var(--divider-light)}
-.pcard{background:var(--pitch);padding:var(--space-lg)}
-.pcard-n{font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--summer-tape);margin-bottom:var(--space-sm);text-transform:uppercase}
-.pcard-t{font-family:var(--font-display);font-weight:700;font-size:1.5rem;margin-bottom:.75rem;color:var(--chalk-line)}
-.pcard-p{font-size:.9375rem;line-height:1.7;color:rgba(249,247,239,.6)}
-.fgrp{margin-bottom:var(--space-md)}
-.flbl{display:block;font-size:.8125rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--pitch);margin-bottom:.5rem}
-.finp,.ftxa,.fsel{width:100%;font-family:var(--font-primary);font-size:1rem;padding:.875rem 1rem;border:1.5px solid var(--divider);background-color:var(--chalk-line);color:var(--pitch);transition:border-color .2s ease}
-.finp:focus,.ftxa:focus,.fsel:focus{outline:none;border-color:var(--track-blue)}
-.ftxa{min-height:140px;resize:vertical}
-.fsel{appearance:none;cursor:pointer}
-.frow{display:grid;grid-template-columns:1fr;gap:var(--space-md)}
-@media(min-width:600px){.frow{grid-template-columns:1fr 1fr}}
-.nav--solid{background-color:rgba(249,247,239,0.97)!important;box-shadow:0 1px 0 var(--divider)!important}
-</style>
-</head><body>
-<a href="#main" class="skip-link">Skip to main content</a>
-<nav class="nav nav--solid" role="navigation" aria-label="Main navigation">
-<div class="container nav__inner">
-<a href="index.html" class="nav__logo" aria-label="Project 50 home">
-        <div class="nav__logo-inner">
-          <img class="nav__logo-wordmark" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzA5IiBoZWlnaHQ9IjE2MCIgdmlld0JveD0iMCAwIDcwOSAxNjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8zOV8zNjU2KSI+CjxwYXRoIGQ9Ik01MzMuNTY2IDM4LjcyOUw1MzcuODUgMTQuNTYxSDUxOC43MTJMNTE0LjQyOCAzOC43MjlINDk2Ljc1Nkw0OTMuNzUxIDU1LjgwMzJINTExLjQyMkw1MDUuMDk2IDkxLjc3NTJDNTAzLjY4NyA5OS42NzMyIDUwNS4zODMgMTA2Ljk4MyA1MDkuODg0IDExMi4zNTNDNTE0LjI2OSAxMTcuNTggNTIxLjA4NSAxMjAuNTgyIDUyOC41NzYgMTIwLjU4MkM1MzguNDQgMTIwLjU4MiA1NDUuODMxIDExNy4wMiA1NDcuNzcyIDExNi4wMDFMNTQyLjQyMyAxMDAuMjc2QzU0MC45MTMgMTAxLjEyNCA1MzcuNDMzIDEwMi44MzIgNTMzLjg5NiAxMDIuODMyQzUzMC4xODcgMTAyLjgzMiA1MjcuNTk4IDEwMS44OTkgNTI1Ljk3NCA5OS45ODkxQzUyNC4xNDggOTcuODM1MSA1MjMuNjQ0IDk0LjU2MSA1MjQuNDM1IDkwLjAwODlMNTMwLjU0NiA1NS44MTc1SDU1NS4wOTFMNTU4LjA5NiAzOC43NDM0SDUzMy41NTFMNTMzLjU2NiAzOC43MjlaIiBmaWxsPSIjRkRCQjMwIi8+CjxwYXRoIGQ9Ik02MjAuNDk5IDI4LjY3NzFMNjIwLjY1NyAyNy44NzI5TDYyMS45OCAyMS4wMzc1SDY1Ny40NTNDNjY4LjA5MyAyMS4wMzc1IDY3Ny4xOTUgMTMuMzk4IDY3OS4wMzUgMi45NDM4NUg2MDYuMDJMNjAxLjIzMiAyOS41NTMxTDYwMS4xMDIgMzAuMjcxMUw2MDAuOTczIDMwLjk4OTFMNTk3LjcwOSA0OS4wODI4TDU5Ny41OCA0OS44MDA4TDU5Ny40NSA1MC41MTg4TDU5NC40MzEgNjcuMzIwMUM1OTguOTc0IDY0LjEwMzQgNjEzLjIwOSA1NC44Njk5IDYyNi44NjkgNTQuODY5OUM2MzAuMjkxIDU0Ljg2OTkgNjMzLjIyNCA1NS40NTg3IDYzNS43MjYgNTYuMzc3N0M2MzUuOTU2IDU2LjQ2MzkgNjM2LjE4NiA1Ni41NjQ0IDYzNi40MTYgNTYuNjUwNUM2MzYuNjQ3IDU2LjczNjcgNjM2Ljg2MiA1Ni44MjI5IDYzNy4wNzggNTYuOTIzNEM2NDAuNTU4IDU4LjQ1OTkgNjQzLjA3NCA2MC42NDI2IDY0NC43OTkgNjIuNjFDNjQ2Ljc5OCA2NC44Nzg5IDY0OC4zMzYgNjcuNTQ5OCA2NDkuMzU3IDcwLjM5MzFDNjQ5LjQ1OCA3MC42NjYgNjQ5LjU0NCA3MC45Mzg4IDY0OS42MzEgNzEuMjExN0M2NDkuNzMxIDcxLjUyNzYgNjQ5Ljg0NiA3MS44NDM1IDY0OS45MzMgNzIuMTczOEM2NTAuNDc5IDc0LjE2OTggNjUwLjc4MSA3Ni4yMzc3IDY1MC43ODEgNzguMjkxMkM2NTAuNzgxIDg0Ljk4MyA2NDcuNzE4IDkxLjUxNjggNjQyLjE1NCA5Ni42ODY0QzY0Mi4wOTYgOTYuNzQzOSA2NDIuMDM5IDk2Ljc4NyA2NDEuOTY3IDk2Ljg0NDRDNjQxLjI0OCAxMDEuMjk2IDY0MC44NzQgMTA1LjY3NiA2NDAuODc0IDEwOS43MjVDNjQwLjg3NCAxMTMuNDE2IDY0MS4xNjEgMTE2LjU4OSA2NDEuNjc5IDExOS4zMThDNjQ2LjU5NyAxMTcuMDYzIDY1MS4yOTggMTE0LjA5MSA2NTUuMjk2IDExMC41MTVDNjYyLjAyNSAxMDQuNTEzIDY3MC4xNjMgOTQuMDU4NSA2NzAuNjIzIDc4LjI3NjhDNjcwLjg1NCA3MC4yNjM5IDY2OS4xNzEgNjIuNjM4NyA2NjUuODY0IDU2LjIwNTRDNjY1Ljc0OSA1NS45OSA2NjUuNjQ4IDU1Ljc3NDYgNjY1LjU0OCA1NS41NTkyQzY2NS40MzMgNTUuMzQzOCA2NjUuMzAzIDU1LjE0MjcgNjY1LjE4OCA1NC45MjczQzY2My42NSA1Mi4xOTg5IDY2MS44MjQgNDkuNzAwMyA2NTkuNzEgNDcuNTMxOUM2NTcuNjExIDQ1LjM2MzUgNjU1LjI1MyA0My41Mzk4IDY1Mi43MDggNDIuMDYwN0M2NTIuNDkyIDQxLjkzMTUgNjUyLjI2MiA0MS44MDIyIDY1Mi4wNDYgNDEuNjg3M0M2NTEuODE2IDQxLjU1ODEgNjUxLjU4NiA0MS40Mjg5IDY1MS4zNTYgNDEuMzE0QzY0OC45NTUgNDAuMDY0NyA2NDYuMzk1IDM5LjExNjkgNjQzLjY5MiAzOC40NzA3QzY0My40MTkgMzguMzk4OSA2NDMuMTQ2IDM4LjM1NTggNjQyLjg1OCAzOC4yOTg0QzY0Mi41NTYgMzguMjQwOSA2NDIuMjU0IDM4LjE2OTEgNjQxLjk1MiAzOC4xMTE3QzYzOS42NTIgMzcuNjgwOSA2MzcuMjUgMzcuNDY1NSA2MzQuNzYzIDM3LjQ2NTVDNjI0Ljc0MSAzNy40NjU1IDYxOS42MjIgMzkuMjg5MiA2MTkuNTY1IDM5LjMwMzZMNjE4LjM3MSAzOS43MzQ0TDYyMC4zNyAyOS40MzgyTDYyMC41MTQgMjguNjYyN0w2MjAuNDk5IDI4LjY3NzFaIiBmaWxsPSIjRkRCQjMwIi8+CjxwYXRoIGQ9Ik02MTkuNjY1IDEwNS4yNTlDNjE5LjUzNiAxMDUuMjU5IDYxOS40MDYgMTA1LjI1OSA2MTkuMjc3IDEwNS4yNDVDNTk5LjMzNCAxMDMuNzk1IDU5My41NjggODcuNzI1OCA1OTIuMzg5IDgzLjUwMzlDNTg4LjUzNSA4Ni4xMTc0IDU4Ni4yMiA4OS45MzcyIDU4NS42NDUgOTQuNjA0MkM1ODQuODU0IDEwMS4wODEgNTg3LjU3MiAxMDguMjg5IDU5Mi43MTkgMTEzLjQzQzU5OC42MTUgMTE5LjMxOCA2MDcuNjU5IDEyMi44MjIgNjE5LjYwOCAxMjMuODQxQzYxOS45ODEgMTIzLjg3IDYyMC4zODQgMTIzLjg4NCA2MjAuNzcyIDEyMy44OTlDNjE5Ljk1MyAxMTkuNTkxIDYxOS41MzYgMTE0Ljg2NiA2MTkuNTM2IDEwOS43NEM2MTkuNTM2IDEwOC4yNjEgNjE5LjU5MyAxMDYuNzUzIDYxOS42NjUgMTA1LjI1OVoiIGZpbGw9IiNGREJCMzAiLz4KPHBhdGggZD0iTTY3Mi4yOTEgMzYuNjc1OEM2NjcuMDg2IDM2LjY3NTggNjYwLjcxNiAzNy43MjQxIDY1NC4xMDIgNDEuMjcxQzY1Ni40ODkgNDIuNzM1NyA2NTguNjg5IDQ0LjUwMiA2NjAuNjg4IDQ2LjU1NTVDNjYyLjk0NSA0OC44ODE4IDY2NC44ODYgNTEuNTUyOCA2NjYuNTExIDU0LjQ2NzlDNjY4LjM1MiA1My45MDc5IDY3MC4yNzggNTMuNjA2MyA2NzIuMjkxIDUzLjYwNjNDNjgzLjkwOSA1My42MDYzIDY5MC41ODEgNjMuNDI4NiA2OTAuNTgxIDgwLjU2MDJDNjkwLjU4MSAxMDMuNjM3IDY3OC45MiAxMzcuMDI0IDY1Ny44NTUgMTM3LjAyNEM2NDkuMDcgMTM3LjAyNCA2NDMuMDg4IDEzMS40MzggNjQwLjY0NCAxMjEuMzQzQzY0MC41ODYgMTIxLjEyNyA2NDAuNTU3IDEyMC44ODMgNjQwLjUgMTIwLjY1NEM2NDAuNDQyIDEyMC40MDkgNjQwLjM5OSAxMjAuMTY1IDY0MC4zNTYgMTE5LjkyMUM2MzkuNzM4IDExNi44OTEgNjM5LjQwNyAxMTMuNTAyIDYzOS40MDcgMTA5Ljc1NEM2MzkuNDA3IDEwNi4wMDYgNjM5LjY5NSAxMDIuMjU4IDY0MC4yNyA5OC4yOTQ5QzY0MC4zMjcgOTcuOTUwMiA2NDAuMzg1IDk3LjU5MTIgNjQwLjQ0MiA5Ny4yMzIyQzY0MC41IDk2Ljg1ODkgNjQwLjU1NyA5Ni40OTk5IDY0MC42MTUgOTYuMTI2NUM2NDIuMDI0IDg3LjgxMiA2NDQuNjcgNzkuMjgyMSA2NDguNDUxIDcyLjA1OUM2NDYuNTI1IDY1LjIwOTMgNjQxLjUzNSA2MC43MDAyIDYzNi4xIDU4LjM0NTFDNjM1LjU2OCA1OS4xMjA2IDYzNS4wNSA1OS45MjQ3IDYzNC41MTggNjAuNzU3NkM2MjcuMDEzIDcyLjgzNDUgNjIyLjE4MSA4OC41ODc1IDYyMS4xODkgMTAzLjg2N0M2MjEuMTc1IDEwNC4xMTEgNjIxLjE2MSAxMDQuMzQgNjIxLjE0NiAxMDQuNTg1QzYyMS4xNDYgMTA0LjgyOSA2MjEuMTE3IDEwNS4wNTggNjIxLjEwMyAxMDUuMzAzQzYyMS4wMzEgMTA2Ljc5NiA2MjAuOTc0IDEwOC4yNzUgNjIwLjk3NCAxMDkuNzRDNjIwLjk3NCAxMTUuMDY3IDYyMS40MDUgMTE5Ljc2MyA2MjIuMTk2IDEyMy45NDJDNjIyLjIzOSAxMjQuMTcyIDYyMi4yODIgMTI0LjQzIDYyMi4zMjUgMTI0LjY2QzYyMi4zNjggMTI0LjkwNCA2MjIuNDI2IDEyNS4xNDggNjIyLjQ4MyAxMjUuMzkyQzYyNy40MyAxNDguNTcgNjQzLjc3OCAxNTMuOTU1IDY1Ny44NTUgMTUzLjk1NUM2NjguMjk0IDE1My45NTUgNjgzLjMyIDE0OS43NDcgNjk1LjYxNCAxMjkuNzI5QzcwMy45OTYgMTE2LjA3MyA3MDkuMDE1IDk3LjY5MTggNzA5LjAxNSA4MC41NzQ1QzcwOS4wMTUgNDQuMzE1MyA2ODkuMDU3IDM2LjY5MDEgNjcyLjMwNiAzNi42OTAxTDY3Mi4yOTEgMzYuNjc1OFoiIGZpbGw9IiNGREJCMzAiLz4KPHBhdGggZD0iTTEzNy45MDYgNjUuNzExN0MxMzguMjIzIDY1LjI1MjIgMTQ1LjgxNSA1NC40MzkgMTU4LjU4MyA1NC40MzlDMTYzLjU0NCA1NC40MzkgMTY3Ljk3MiA1NS42NzQgMTY5LjU1NCA1Ni4xNjIzTDE3OC4wOCA0MC42OTY1QzE3Ni4yMjYgNDAuMDUwMiAxNzAuNTAzIDM4LjM3MDEgMTY0Ljc5NCAzOC4zNzAxQzE1MC4yMTQgMzguMzcwMSAxNDEuNDU4IDQ4LjM1MDQgMTQxLjM3MiA0OC40NTA5TDEzOS43MDQgNTAuMzg5NUwxNDEuNjE2IDM4Ljc0MzVIMTIzLjQ5OUwxMDkuNTA4IDExOC41NDJIMTI4LjY0NkwxMzcuODM0IDY1Ljg1NTNMMTM3LjkyMSA2NS43MjYxTDEzNy45MDYgNjUuNzExN1oiIGZpbGw9IiNGREJCMzAiLz4KPHBhdGggZD0iTTIyMC44NTcgMzYuNjc1OEMxOTMuMTYzIDM2LjY3NTggMTczLjg2NyA2MS4yMzE1IDE3My44NjcgODMuMjU5OUMxNzMuODY3IDEwMS44NDIgMTg2LjE2MSAxMjAuNTgyIDIxMy42MzkgMTIwLjU4MkMyNDEuMTE2IDEyMC41ODIgMjYwLjYyOCA5Ni4wMjYgMjYwLjYyOCA3My45OTc2QzI2MC42MjggNTUuNDE1NyAyNDguMzM1IDM2LjY3NTggMjIwLjg1NyAzNi42NzU4Wk0yMTMuNjUzIDEwMi44MThDMjAxLjczMyAxMDIuODE4IDE5My43MSA5NC45NDkgMTkzLjcxIDgzLjI0NTVDMTkzLjcxIDY5LjM4OCAyMDQuMDkxIDU0LjQyNDggMjIwLjg1NyA1NC40MjQ4QzIzMi43NzcgNTQuNDI0OCAyNDAuOCA2Mi4yOTQyIDI0MC44IDczLjk5NzZDMjQwLjggODcuODU1MSAyMzAuNDE5IDEwMi44MTggMjEzLjY1MyAxMDIuODE4WiIgZmlsbD0iI0ZEQkIzMCIvPgo8cGF0aCBkPSJNMzAwLjM0MyAwQzI5My43MjkgMCAyODguNTM4IDUuMTgzOTkgMjg4LjUzOCAxMS43ODk2QzI4OC41MzggMTguMzk1MyAyOTMuNzI5IDIzLjU3OTMgMzAwLjM0MyAyMy41NzkzQzMwNi45NTcgMjMuNTc5MyAzMTIuMTQ4IDE4LjM5NTMgMzEyLjE0OCAxMS43ODk2QzMxMi4xNDggNS4xODM5OSAzMDYuOTU3IDAgMzAwLjM0MyAwWiIgZmlsbD0iI0ZEQkIzMCIvPgo8cGF0aCBkPSJNMjcxLjcxNCAxMjQuODQ2QzI2OS4wMjYgMTQwLjI4NCAyNjEuMTE3IDE0Mi4wNjQgMjU1LjM5NSAxNDIuMDY0QzI1MC42NjQgMTQyLjA2NCAyNDYuNjUyIDEzOS44MzggMjQ1LjA1NiAxMzguODE5TDIzNy41OTQgMTU1LjE2MUMyMzkuMjkgMTU2LjI4MSAyNDUuNjYgMTYwIDI1Ni4yNTcgMTYwQzI2NC44MTMgMTYwIDI4NS4yNzQgMTU2Ljc0IDI5MC41NTEgMTI2LjQ5OEwzMDYuMDA4IDM4Ljc1NzhDMjk0LjgwNyAzOS4xNTk5IDI4NS4zNzQgNDcuMjg3NyAyODMuNDE5IDU4LjQwMjRMMjcxLjcxNCAxMjQuODYxVjEyNC44NDZaIiBmaWxsPSIjRkRCQjMwIi8+CjxwYXRoIGQ9Ik0zNjAuMDg2IDM2LjY3NThDMzM4LjMwMiAzNi42NzU4IDMxNC45OTQgNTUuMTg1OSAzMTQuOTk0IDgyLjc0MjlDMzE0Ljk5NCAxMDAuMjA1IDMyNS4zNjEgMTIwLjU4MiAzNTQuNTkzIDEyMC41ODJDMzcxLjc3NiAxMjAuNTgyIDM4NC4wODQgMTExLjc3OSAzODYuNiAxMDkuODI2TDM3Ny43NTcgOTUuMzA4QzM3NS4zOTkgOTcuMjAzNSAzNjYuOTQ0IDEwMy4xNjMgMzU0LjU5MyAxMDMuMTYzQzM0MC41NzQgMTAzLjE2MyAzMzMuNzg3IDkyLjkyNDIgMzMzLjYyOSA4Ni4wMTdWODUuMjg0NkgzOTQuODM5QzM5Ni43OCA3NS4zMzMxIDM5Ni45MzggNzIuNjYyMSAzOTYuOTM4IDcwLjIzNTNDMzk2LjkzOCA0OS44NDQgMzgyLjQ3MyAzNi42NzU4IDM2MC4wODYgMzYuNjc1OFpNMzc4LjM5IDcwLjQzNjNDMzc4LjM0NyA3MC42NTE3IDM3OC4zMTggNzAuODY3MSAzNzguMzE4IDcxLjA5NjlWNzEuODE0OUgzMzUuNjEzTDMzNS45MDEgNzAuODgxNUMzMzguMDE0IDY0LjA2MDUgMzQ2LjIxIDUzLjkyMjIgMzYwLjEgNTMuOTIyMkMzNzIuNzM5IDUzLjkyMjIgMzc4LjQ5MSA2Mi4wMjEzIDM3OC40OTEgNjkuNTQ2QzM3OC40OTEgNjkuODQ3NiAzNzguNDQ3IDcwLjEzNDggMzc4LjM5IDcwLjQzNjNaIiBmaWxsPSIjRkRCQjMwIi8+CjxwYXRoIGQ9Ik00NzMuNTkxIDYyLjUyMzZMNDg3LjMwOSA1MC44OTJDNDg1LjQ1NCA0OC4zMDcyIDQ3NS44NjMgMzYuNjYxMSA0NTQuMjk1IDM2LjY2MTFDNDI1LjY4MSAzNi42NjExIDQwNi40NTcgNjAuNzQzIDQwNi40NTcgODMuMjQ1MkM0MDYuNDU3IDEwMS44MjcgNDE4LjcwOCAxMjAuNTY3IDQ0Ni4wNTYgMTIwLjU2N0M0NjMuMzk3IDEyMC41NjcgNDc1LjczNCAxMTAuNjU5IDQ3OC4yMjEgMTA4LjUwNUw0NjcuOTQgOTQuMTMwMkM0NjUuNzY5IDk2LjI1NTUgNDU4LjEwNSAxMDIuODE4IDQ0Ni4wNTYgMTAyLjgxOEM0MzQuMDA3IDEwMi44MTggNDI2LjI4NSA5NC41ODk3IDQyNi4yODUgODMuMjQ1MkM0MjYuMjg1IDY3Ljg5NDMgNDM5LjM3IDU0LjQyNDYgNDU0LjI5NSA1NC40MjQ2QzQ2NS41MjUgNTQuNDI0NiA0NzEuODY2IDYwLjU1NjMgNDczLjYwNiA2Mi41MjM2SDQ3My41OTFaIiBmaWxsPSIjRkRCQjMwIi8+CjxwYXRoIGQ9Ik03NS4wMTM3IDBMMjkuMjc1MSAwLjAyODcyMDJDMjEuMjk0OSAwIDEyLjc5NzEgMCA5LjE3MzYyIDBDOS4xNzM2MiA1LjE4Mzk5IDE0LjEzNDMgMTQuNzc2NSAyNi43NDQ0IDE4LjA5MzdMMCAxNTMuMzY2QzExLjIwMSAxNTIuOTY0IDIwLjYxOTEgMTQ0LjgzNiAyMi41NjAyIDEzMy43MjFMMzQuNTUyIDc3LjE0MjNDMzQuNzM5IDc2LjA5NDEgMzUuNjMwNSA3NS4zNDczIDM2LjY5NDUgNzUuMzQ3M0g2Mi44MjA2QzY4Ljk0NTkgNzUuMzQ3MyA3NC43MjYyIDc0LjQ1NyA4MC4wMTc1IDcyLjY5MDdDOTcuNDg3NyA2Ni44NzQ5IDEwOC43NzUgNTEuNTA5NiAxMDguNzc1IDMzLjU1OTVDMTA4Ljc3NSAxMy40ODQxIDk1LjIxNTggMCA3NS4wMTM3IDBaTTY0LjYwMzYgNTcuMjM5M0gzOC44OEw0NS44MjUgMTguMTA4MUg3MS4yODk3QzgzLjQxMDkgMTguMTA4MSA5MC4zNzAyIDIzLjczNzIgOTAuMzcwMiAzMy41NTk1QzkwLjM3MDIgNDcuNzE4NSA4MC4wMTc1IDU3LjIzOTMgNjQuNjAzNiA1Ny4yMzkzWiIgZmlsbD0iI0ZEQkIzMCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzM5XzM2NTYiPgo8cmVjdCB3aWR0aD0iNzA5IiBoZWlnaHQ9IjE2MCIgZmlsbD0iI0ZEQkIzMCIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" alt="Project 50" width="140" height="32">
-          <img class="nav__logo-monogram" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNDUuNDk1IDEzNy44MjVIMzIxLjE3N0MzMjAuNzk5IDE1MC4wNzQgMzE3LjgxMSAxNjEuNjY2IDMxMi41MjggMTcyLjAwN0MzMzEuMzAyIDE3MC4wODEgMzQxLjMwMSAxNTkuNzg1IDM0NS40OTUgMTM3LjgyNVoiIGZpbGw9IiMxMTExMTEiLz4KPHBhdGggZD0iTTI1MS42NjEgNzEuMDA5TDE2Ny43MzYgNzEuMDYzQzE0Ny41MDQgNzEuMDA5IDEzNC44NjggNzAuOTkxIDEyOS4yNDMgNzEuMDA5QzEzMy4wNjggODEuOTcxIDE0MS40MTEgOTYuMTEgMTU5LjYgMTA0LjU3OUMxNjEuNDA5IDEwNS40MTYgMTYyLjQzNSAxMDcuMzUxIDE2Mi4wOTMgMTA5LjI4NkwxMjkgMjk3LjYyQzE1MC40ODMgMjk2LjkxOCAxNjguNTU1IDI4MS4zMTIgMTcyLjI3MiAyNTkuOTkxTDE3OS41MTcgMjE4LjQ5MkMxNzkuODU5IDIxNi41NDggMTgxLjUzMyAyMTUuMTM1IDE4My41MDQgMjE1LjEzNUgxOTEuNjIyTDE5MS43ODQgMjE0LjIzNUwxOTcuODc3IDE4MC4zNUgxODYuMTk1TDE5OS40MTYgMTA1Ljc3NkgyNDEuODMzQzI2My44NTYgMTA1Ljc3NiAyNzYuODc5IDExNS41NjggMjc4LjAyMiAxMzIuNzIyQzI3OC4wNzYgMTMzLjU0MSAyNzguMTMgMTM0LjM1MSAyNzguMTMgMTM1LjIwNkMyNzguMTMgMTM1LjIyNCAyNzguMTMgMTM1LjI1MSAyNzguMTMgMTM1LjI2OUMyNzguMTMgMTM1LjcwMSAyNzguMDg1IDEzNi4xMTUgMjc4LjA2NyAxMzYuNTM4QzI3OC4wNTggMTM2Ljk3IDI3OC4wMzEgMTM3LjM4NCAyNzguMDEzIDEzNy44MDdDMjc3LjI4NCAxNTIuNzI5IDI3MC4zOSAxNjQuNzA4IDI1OS4xMDQgMTcyLjEwNkMyNTguNDQ3IDE3Mi41MzggMjU3Ljc5OSAxNzIuOTc5IDI1Ny4xMTUgMTczLjM3NUMyNTYuMzQxIDE3My44MjUgMjU1LjUyMiAxNzQuMjM5IDI1NC43MTIgMTc0LjY0NEMyNTIuNzk1IDE3NS42MTYgMjUwLjc3OSAxNzYuNDYyIDI0OC42NjQgMTc3LjE5MUMyNDcuNDQgMTc3LjYxNCAyNDYuMTcxIDE3Ny45ODMgMjQ0Ljg4NCAxNzguMzI1TDI0NC43MTMgMTc5LjE5OEwyNDQuNDYxIDE4MC40OTRMMjQwLjY3MiAyMDAuMDI0QzI0NS43MyAxOTguOTg5IDI1My44NDggMTk3LjgzNyAyNjQuODY0IDE5Ny44MzdDMjY4LjcxNiAxOTcuODM3IDI3Mi41ODYgMTk4LjExNiAyNzYuMzQ4IDE5OC42NjVDMjc3LjA3NyAxOTguNzczIDI3Ny44MDYgMTk4Ljg5IDI3OC41MjYgMTk5LjAxNkMyNzkuMjE5IDE5OS4xNDIgMjc5LjkwMyAxOTkuMjc3IDI4MC41ODcgMTk5LjQxMkMyODEuMDczIDE5OS41MTEgMjgxLjU0MSAxOTkuNjU1IDI4Mi4wMTggMTk5Ljc2M0MyOTEuNzgzIDE5My4xMDMgMjk5Ljc3NSAxODQuNTQ0IDMwNS41NjIgMTc0LjY0NEMzMDUuODA1IDE3NC4yMjEgMzA2LjAzOSAxNzMuNzk4IDMwNi4yODIgMTczLjM3NUMzMDYuNTE2IDE3Mi45NTIgMzA2Ljc2OCAxNzIuNTM4IDMwNy4wMDIgMTcyLjEwNkMzMTIuNTE5IDE2MS43ODMgMzE1LjY4NyAxNTAuMTQ2IDMxNi4wODMgMTM3LjgwN0MzMTYuMTAxIDEzNy4zODQgMzE2LjEyOCAxMzYuOTYxIDMxNi4xMzcgMTM2LjUzOEMzMTYuMTM3IDEzNi4xMTUgMzE2LjE5MSAxMzUuNjkyIDMxNi4xOTEgMTM1LjI2OUMzMTYuMTkxIDEzNS4yNTEgMzE2LjE5MSAxMzUuMjI0IDMxNi4xOTEgMTM1LjIwNkMzMTYuMTkxIDk2LjgwMyAyOTAuMjUzIDcxIDI1MS42NjEgNzFWNzEuMDA5WiIgZmlsbD0iIzExMTExMSIvPgo8cGF0aCBkPSJNMjA2LjAzMiAzMjIuMDE5TDIwNi4xNjcgMzIxLjU2QzIwNi4yNDggMzIxLjI5IDIwNi4zMiAzMjEuMDI5IDIwNi40MDEgMzIwLjc3N0wyMDYuNDU1IDMyMC42MDZDMTkxLjkxMSAzMTAuMTc1IDE4Ni42MDEgMjk0Ljg2NiAxODUuMTcgMjg5LjY4MkMxNzcuODQ0IDI5NC42NDEgMTczLjQxNiAzMDEuODg2IDE3Mi4zMzYgMzEwLjc0MkMxNzAuODUxIDMyMi45NjQgMTc1Ljk2MyAzMzYuNTk5IDE4NS42ODMgMzQ2LjMxOUMxODkuNDM2IDM1MC4wNzIgMTkzLjkyNyAzNTMuMjU4IDE5OS4wMjEgMzU1Ljk3NkMyMDAuMzI2IDM0NC42MDkgMjAyLjY1NyAzMzMuMTk3IDIwNi4wMjMgMzIyLjAxOUgyMDYuMDMyWiIgZmlsbD0iIzExMTExMSIvPgo8cGF0aCBkPSJNMzMxLjQzNyAyNDMuNjJDMzM1LjgxMSAyNTQuODQzIDMzNy45MjYgMjY3LjM2MiAzMzcuNTQ4IDI4MC4xNDJDMzM3LjQxMyAyODQuODEzIDMzNi45MDkgMjg5LjQxMiAzMzYuMDE4IDI5NC4xOTFMMzM1Ljg4MyAyOTQuOTY1QzMzNS43NjYgMjk1LjYwNCAzMzUuNjQ5IDI5Ni4yNTIgMzM1LjUxNCAyOTYuODgyQzMzNS4zNyAyOTcuNTMgMzM1LjIwOCAyOTguMTY5IDMzNS4wNDYgMjk4Ljc5OUwzMzQuODU3IDI5OS41MTlDMzM0LjUxNSAzMDAuODY5IDMzNC4xNDYgMzAyLjIwMSAzMzMuNzUgMzAzLjQ5N0MzMzQuNzMxIDMwOC43ODkgMzM1LjI0NCAzMTQuNjQ4IDMzNS4yNDQgMzIxLjA3NEMzMzUuMjQ0IDM2NC43MDYgMzEzLjExMyA0MjcuODIzIDI3My4wOTkgNDI3LjgyM0MyNTAuODY5IDQyNy44MjMgMjM4LjExNiA0MDkuMDQgMjM4LjExNiAzNzYuMjk4QzIzOC4xMTYgMzc0LjY1MSAyMzguMTk3IDM3Mi45MzIgMjM4LjI2OSAzNzEuMjRDMjM4LjMwNSAzNzAuMzU4IDIzOC4yOTYgMzY5LjUwMyAyMzguMzUgMzY4LjYwM0MyMzguMzc3IDM2OC4xODkgMjM4LjM5NSAzNjcuNzc1IDIzOC40MjIgMzY3LjM2MUMyMzguNDQ5IDM2Ni45MzggMjM4LjQ4NSAzNjYuNTA2IDIzOC41MjEgMzY2LjA4M0MyMzkuMzU4IDM1NC42MDggMjQxLjU4MSAzNDIuMzE0IDI0NS4xIDMzMC40NzlDMjQ1LjIyNiAzMzAuMDM4IDI0NS4zNjEgMzI5LjYwNiAyNDUuNDg3IDMyOS4xNzRDMjQ1LjYyMiAzMjguNzI0IDI0NS43NTcgMzI4LjI2NSAyNDUuOTAxIDMyNy44MTVDMjQ2LjE4OSAzMjYuOTA2IDI0Ni41MDQgMzI2LjAwNiAyNDYuODEgMzI1LjA5N0MyNTUuMTcxIDMwMC4yMTIgMjY5LjQ0NSAyNzguNDE0IDI4OC45NjYgMjcyLjA5NkMyODguOTQ4IDI3Mi4wMjQgMjg4LjkzIDI3MS45NTIgMjg4LjkxMiAyNzEuODhDMjg3LjQzNiAyNjUuMTQ4IDI4NC4zMTMgMjU4LjkyOSAyNzkuODg1IDI1My44ODlDMjc3LjU0NSAyNTEuMjM0IDI3NC44NTQgMjQ4LjkyMSAyNzEuODY2IDI0Ny4wMjJDMjcxLjQ4OCAyNDYuNzc5IDI3MS4xMDEgMjQ2LjUzNiAyNzAuNzA1IDI0Ni4zMDJDMjcwLjM5IDI0Ni4xMTMgMjcwLjA1NyAyNDUuOTQyIDI2OS43MjQgMjQ1Ljc2MkwyNjkuNTYyIDI0NS42NzJDMjY5LjI5MiAyNDUuNTI4IDI2OS4wMDQgMjQ1LjQwMiAyNjguNzI1IDI0NS4yNThDMjU1LjMzMyAyNTEuNzExIDI0MS4yNjYgMjYzLjM0OCAyMjguNjM5IDI4My41NTNDMjIxLjY2NCAyOTQuNzEzIDIxNS45MTMgMzA3LjUzOCAyMTEuNjIgMzIxLjEwMUMyMTEuNDk0IDMyMS40OTcgMjExLjM3NyAzMjEuODkzIDIxMS4yNTEgMzIyLjI4QzIxMS4xMjUgMzIyLjY4NSAyMTEuMDE3IDMyMy4wOSAyMTAuODkxIDMyMy40OTVDMjA3LjQ4IDMzNC43OTkgMjA1LjA3NyAzNDYuNTggMjAzLjg0NCAzNTguMzE2QzIwMy43OTkgMzU4Ljc3NSAyMDMuNzYzIDM1OS4yMzQgMjAzLjcxOCAzNTkuNjkzQzIwMy42NzMgMzYwLjEyNSAyMDMuNjM3IDM2MC41NTcgMjAzLjYwMSAzNjAuOTg5QzIwMy4xNDIgMzY2LjExOSAyMDIuODgxIDM3MS4yNCAyMDIuODgxIDM3Ni4yOThDMjAyLjg4MSA0NDUuNTA4IDI0MS4wNjggNDYwLjAzNCAyNzMuMDk5IDQ2MC4wMzRDMjkyLjk3MSA0NjAuMDM0IDMyMS41NzMgNDUyLjA2OSAzNDQuOTkxIDQxNC4xNDNDMzYwLjk0OCAzODguMjg2IDM3MC40NzkgMzUzLjUwMSAzNzAuNDc5IDMyMS4wODNDMzcwLjQ3OSAyNzQuMjM4IDM1Mi44MDMgMjUyLjY0NyAzMzEuNDM3IDI0My42NDdWMjQzLjYyWiIgZmlsbD0iIzExMTExMSIvPgo8cGF0aCBkPSJNMzMyLjM4MyAyNzMuMDIzQzMzMi4zNDcgMjcyLjE4NiAzMzIuMzExIDI3MS4zNCAzMzIuMjQ4IDI3MC41MTJDMzMyLjE4NSAyNjkuNjAzIDMzMi4wOTUgMjY4LjcwMyAzMzEuOTk2IDI2Ny44MDNDMzMxLjkzMyAyNjcuMTczIDMzMS44NyAyNjYuNTUyIDMzMS43ODkgMjY1LjkzMUMzMzEuNjYzIDI2NC45NSAzMzEuNTI4IDI2My45NjkgMzMxLjM3NSAyNjIuOTg4QzMzMS4yOTQgMjYyLjQ2NiAzMzEuMjA0IDI2MS45NDQgMzMxLjExNCAyNjEuNDIyQzMzMC45MzQgMjYwLjQwNSAzMzAuNzQ1IDI1OS4zOTcgMzMwLjUyOSAyNTguMzk4QzMzMC40MyAyNTcuOTEyIDMzMC4zMTMgMjU3LjQzNSAzMzAuMjA1IDI1Ni45NDlDMzI5Ljk3MSAyNTUuOTUgMzI5LjczNyAyNTQuOTUxIDMyOS40NzYgMjUzLjk3QzMyOS4zNDEgMjUzLjQ3NSAzMjkuMTg4IDI1Mi45OCAzMjkuMDUzIDI1Mi40ODVDMzI4Ljc4MyAyNTEuNTQgMzI4LjUwNCAyNTAuNTg2IDMyOC4yMDcgMjQ5LjY1OUMzMjguMDI3IDI0OS4xMDEgMzI3LjgyIDI0OC41NjEgMzI3LjYyMiAyNDguMDAzQzMyNy4zMjUgMjQ3LjE0OCAzMjcuMDM3IDI0Ni4yOTMgMzI2LjcxMyAyNDUuNDU2TDMyNi42OTUgMjQ1LjQwMkMzMjYuMTQ2IDI0My45OTggMzI1LjU3IDI0Mi42MTIgMzI0Ljk0IDI0MS4yNTNDMzI0LjcwNiAyNDAuNzQgMzI0LjQ2MyAyNDAuMjM2IDMyNC4yMiAyMzkuNzMyQzMyMy45NzcgMjM5LjIzNyAzMjMuNzM0IDIzOC43NTEgMzIzLjQ4MiAyMzguMjU2QzMyMC4zNTkgMjMyLjE4MSAzMTYuNDggMjI2LjY2NCAzMTEuODk5IDIyMS45MzlDMzAzLjEwNiAyMTIuODg1IDI5Mi4xMDggMjA2Ljk1NCAyNzkuNTk4IDIwNC4zOEMyNzguOTU5IDIwNC4yNDUgMjc4LjMyOSAyMDQuMTE5IDI3Ny42ODEgMjA0LjAxMUMyNzcuMDA2IDIwMy44OTQgMjc2LjMzMSAyMDMuNzc3IDI3NS42NDcgMjAzLjY3OEMyNzIuMTY0IDIwMy4xNzQgMjY4LjU4MiAyMDIuOTA0IDI2NC44OTIgMjAyLjkwNEMyNDYuMDEgMjAyLjkwNCAyMzYuMzM1IDIwNi4zNTEgMjM2LjI0NSAyMDYuMzc4TDIzNC4xMzkgMjA3LjE0M0wyMzkuNDk0IDE3OS41MDRMMjM5Ljc0NiAxNzguMTk5TDI0MC4wMDcgMTc2Ljg0TDI0MC45MzQgMTcyLjA3SDI0OC40MTNDMjY0LjI4IDE2NS43NzkgMjcxLjM3MiAxNTAuNzY3IDI3Mi43NTggMTM3Ljc3MUgyMTAuNzIxTDIwMy41MjEgMTc3Ljc2N0wyMDMuMjk2IDE3OS4wMzZMMjAzLjA2MiAxODAuMzA1TDE5Ni44MDcgMjE1LjA5TDE5Ni41ODIgMjE2LjM1OUwxOTYuMzQ4IDIxNy42MjhMMTg4LjgyNCAyNTkuNDQyQzE5Ny4xOTQgMjUzLjQ5MyAyMjQuMTU4IDIzNS44OCAyNTAuMDI0IDIzNS44OEMyNTcuNDQgMjM1Ljg4IDI2My41OTYgMjM3LjM2NSAyNjguNjk5IDIzOS41NjFMMjY4Ljc4OSAyMzkuNTE2TDI3MC43MTUgMjQwLjQ4OEMyNzAuODU5IDI0MC41NiAyNzEuMDAzIDI0MC42MzIgMjcxLjE0NyAyNDAuNzA0TDI3MS4yNzMgMjQwLjc2N0MyNzEuNTA3IDI0MC44ODQgMjcxLjc0MSAyNDAuOTkyIDI3MS45ODQgMjQxLjEyN0wyNzIuMiAyNDEuMjQ0QzI3Mi41MDYgMjQxLjQwNiAyNzIuODEyIDI0MS41NzcgMjczLjEwOSAyNDEuNzQ4QzI3My4xNjMgMjQxLjc4NCAyNzMuMjI2IDI0MS44MTEgMjczLjI4IDI0MS44MzhDMjczLjQyNCAyNDEuOTE5IDI3My41NTkgMjQyLjAwOSAyNzMuNzAzIDI0Mi4wOTlDMjc0LjAwOSAyNDIuMjc5IDI3NC4zMDYgMjQyLjQ2OCAyNzQuNjEyIDI0Mi42NTdDMjc1LjUwMyAyNDMuMjI0IDI3Ni4zNzYgMjQzLjgyNyAyNzcuMjIyIDI0NC40NjZDMjc3LjU0NiAyNDQuNzA5IDI3Ny44NDMgMjQ0Ljk2MSAyNzguMTQ5IDI0NS4yMDRDMjc4LjYzNSAyNDUuNTkxIDI3OS4xMyAyNDUuOTc4IDI3OS41OTggMjQ2LjM4M0MyODAuMDAzIDI0Ni43MzQgMjgwLjM2MyAyNDcuMDg1IDI4MC43NDEgMjQ3LjQzNkMyODEuMDgzIDI0Ny43NTEgMjgxLjQzNCAyNDguMDY2IDI4MS43NjcgMjQ4LjM5QzI4Mi40NTEgMjQ5LjA2NSAyODMuMDgxIDI0OS43NCAyODMuNjY2IDI1MC40MDZDMjgzLjY4NCAyNTAuNDI0IDI4My43MDIgMjUwLjQ0MiAyODMuNzIgMjUwLjQ2QzI4OC43NzggMjU2LjIyIDI5Mi4yNyAyNjMuMzAzIDI5My44OTkgMjcwLjcxOUMyOTMuOTg5IDI3MS4xMzMgMjk0LjExNSAyNzEuNTM4IDI5NC4xODcgMjcxLjk2MUMyOTQuMjY4IDI3Mi4zNzUgMjk0LjMwNCAyNzIuNzk4IDI5NC4zNjcgMjczLjIyMUMyOTQuNDkzIDI3My45ODYgMjk0LjU3NCAyNzQuNzYgMjk0LjY2NCAyNzUuNTM0QzI5NC44MzUgMjc3LjAxOSAyOTQuOTUyIDI3OC41MDQgMjk0Ljk1MiAyNzkuOTg5QzI5NC45NTIgMjkyLjU4IDI4OS4xOTIgMzA0Ljg3NCAyNzguNzI1IDMxNC42MDNDMjcwLjgzMiAzMjEuOTQ3IDI2MC44NTEgMzI3LjA5NSAyNTAuNzI2IDMyOS40MDhDMjUwLjY1NCAzMjkuNjI0IDI1MC41OTEgMzI5Ljg0OSAyNTAuNTI4IDMzMC4wNjVMMjUwLjM2NiAzMzAuNTk2TDI0OS45ODggMzMxLjg3NEMyNDYuNjc2IDM0Mi45OTggMjQ0LjQ5OCAzNTQuODA2IDI0My42NDMgMzY2LjA0N0MyNDQuMTQ3IDM2Ni4wMzggMjQ0LjY0MiAzNjYuMDI5IDI0NS4xNTUgMzY2LjAwMkMyNDUuODMgMzY1Ljk2NiAyNDYuNTIzIDM2NS44OTQgMjQ3LjIwNyAzNjUuODRDMjQ3LjgzNyAzNjUuNzg2IDI0OC40NjcgMzY1Ljc1IDI0OS4xMDYgMzY1LjY3OEMyNDkuNzkgMzY1LjYwNiAyNTAuNDkyIDM2NS40OTggMjUxLjE4NSAzNjUuMzk5QzI1MS44MzMgMzY1LjMwOSAyNTIuNDcyIDM2NS4yMzcgMjUzLjEyIDM2NS4xMjlDMjUzLjgxMyAzNjUuMDIxIDI1NC41MTUgMzY0Ljg3NyAyNTUuMjA4IDM2NC43NDJDMjU1Ljg2NSAzNjQuNjE2IDI1Ni41MjIgMzY0LjUwOCAyNTcuMTc5IDM2NC4zNzNDMjU3Ljg3MiAzNjQuMjI5IDI1OC41NzQgMzY0LjA0OSAyNTkuMjY3IDM2My44ODdDMjU5LjkzMyAzNjMuNzI1IDI2MC41OTkgMzYzLjU4MSAyNjEuMjc0IDM2My40MUMyNjEuOTY3IDM2My4yMyAyNjIuNjY5IDM2My4wMTQgMjYzLjM2MiAzNjIuODE2QzI2NC4wMjggMzYyLjYyNyAyNjQuNzAzIDM2Mi40NDcgMjY1LjM2OSAzNjIuMjRDMjY2LjA3MSAzNjIuMDI0IDI2Ni43NjQgMzYxLjc4MSAyNjcuNDU3IDM2MS41NDdDMjY4LjEyMyAzNjEuMzIyIDI2OC43OTggMzYxLjExNSAyNjkuNDY0IDM2MC44NzJDMjcwLjE1NyAzNjAuNjI5IDI3MC44NSAzNjAuMzUgMjcxLjUzNCAzNjAuMDg5QzI3Mi4yIDM1OS44MzcgMjcyLjg3NSAzNTkuNTk0IDI3My41NDEgMzU5LjMyNEMyNzQuMjQzIDM1OS4wMzYgMjc0Ljk0NSAzNTguNzMgMjc1LjYzOCAzNTguNDI0QzI3Ni4yODYgMzU4LjE0NSAyNzYuOTM0IDM1Ny44ODQgMjc3LjU4MiAzNTcuNTg3QzI3OC4yNzUgMzU3LjI3MiAyNzguOTU5IDM1Ni45MyAyNzkuNjUyIDM1Ni41OTdDMjgwLjMgMzU2LjI5MSAyODAuOTQ4IDM1NS45OTQgMjgxLjU4NyAzNTUuNjdDMjgyLjI3MSAzNTUuMzI4IDI4Mi45MzcgMzU0Ljk1OSAyODMuNjEyIDM1NC41OTlDMjg0LjI0MiAzNTQuMjY2IDI4NC44ODEgMzUzLjk0MiAyODUuNTExIDM1My41OTFDMjg2LjE5NSAzNTMuMjEzIDI4Ni44NyAzNTIuNzk5IDI4Ny41NDUgMzUyLjQwM0MyODguMTQ4IDM1Mi4wNTIgMjg4Ljc2IDM1MS43MSAyODkuMzU0IDM1MS4zNDFDMjkwLjAxMSAzNTAuOTM2IDI5MC42NSAzNTAuNTA0IDI5MS4yOTggMzUwLjA5QzI5MS45MDEgMzQ5LjcwMyAyOTIuNTA0IDM0OS4zMjUgMjkzLjA5OCAzNDguOTI5QzI5My43NTUgMzQ4LjQ4OCAyOTQuMzk0IDM0OC4wMiAyOTUuMDMzIDM0Ny41NjFDMjk1LjYgMzQ3LjE2NSAyOTYuMTc2IDM0Ni43NzggMjk2LjcyNSAzNDYuMzY0QzI5Ny40NzIgMzQ1LjgxNSAyOTguMTkyIDM0NS4yMzkgMjk4LjkyMSAzNDQuNjYzQzI5OS4zNTMgMzQ0LjMyMSAyOTkuODAzIDM0My45OTcgMzAwLjIyNiAzNDMuNjU1QzMwMS4yMTYgMzQyLjg1NCAzMDIuMTc5IDM0Mi4wMjYgMzAzLjEzMyAzNDEuMTg5QzMwMy4yNzcgMzQxLjA1NCAzMDMuNDM5IDM0MC45MzcgMzAzLjU4MyAzNDAuODAyQzMxMi44NDQgMzMyLjU0IDMyMy40NzMgMzE5Ljc3OCAzMjguODkxIDMwMS45MzFDMzI5LjI2OSAzMDAuNjk4IDMyOS42MiAyOTkuNDQ3IDMyOS45MzUgMjk4LjE5NkMzMzAuMTQyIDI5Ny4zNzcgMzMwLjM2NyAyOTYuNTc2IDMzMC41NDcgMjk1LjczOUMzMzAuNzI3IDI5NC45MiAzMzAuODYyIDI5NC4wNTYgMzMxLjAyNCAyOTMuMjFDMzMxLjAyNCAyOTMuMjEgMzMxLjAyNCAyOTMuMjEgMzMxLjAyNCAyOTMuMjAxQzMzMS40MzggMjkwLjk3OCAzMzEuNzYyIDI4OC44IDMzMS45OTYgMjg2LjYzMUMzMzIuMDA1IDI4Ni41MjMgMzMyLjAxNCAyODYuNDE1IDMzMi4wMjMgMjg2LjMwN0MzMzIuMjQ4IDI4NC4xODMgMzMyLjQwMSAyODIuMDc3IDMzMi40NjQgMjc5Ljk1M0MzMzIuNTA5IDI3OC4zNDIgMzMyLjUwOSAyNzYuNzQgMzMyLjQ2NCAyNzUuMTQ3QzMzMi40NDYgMjc0LjQyNyAzMzIuNDAxIDI3My43MDcgMzMyLjM2NSAyNzIuOTg3TDMzMi4zODMgMjczLjAyM1oiIGZpbGw9IiMxMTExMTEiLz4KPC9zdmc+Cg==" alt="Project 50" width="32" height="32">
-        </div>
-      </a>
-<ul class="nav__links" role="list">
-<li><a href="story.html">Our Story</a></li>
-<li><a href="programmes.html">Programmes</a></li>
-<li><a href="index.html#values">Values</a></li>
-<li><a href="index.html#faq">FAQ</a></li>
-<li><a href="contact.html" class="nav__cta">Get Started</a></li>
-</ul>
-<button class="nav__toggle" aria-expanded="false" aria-controls="mm" aria-label="Open menu"><span></span><span></span><span></span></button>
-</div>
-<div class="nav__mobile" id="mm"><a href="story.html">Our Story</a><a href="programmes.html">Programmes</a><a href="index.html#values">Values</a><a href="contact.html">Get Started</a></div>
-</nav>
-<main id="main">
-<header class="page-hdr">
-<div class="container">
-<p class="page-hdr__label">Get in touch</p>
-<h1 class="page-hdr__title">Start a conversation.</h1>
-<p class="page-hdr__sub">Whether you&#8217;re looking for 1:1 coaching, a group programme, or just want to ask a question and we&#8217;d like to hear from you.</p>
-</div>
+<!-- p50:nav -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="/" aria-label="Project 50 home">
+      <img class="logo-a" src="/assets/img/logo-wordmark.svg" alt="Project 50" width="709" height="160">
+      <img class="logo-b" src="/assets/img/logo-monogram.svg" alt="" aria-hidden="true" width="500" height="500">
+    </a>
+    <ul class="nav__links">
+      <li><a href="/story.html">Our Story</a></li>
+      <li><a href="/programmes.html">Programmes</a></li>
+      <li><a href="/#values">Values</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a class="btn btn--tape" href="/contact.html">Get Started</a></li>
+    </ul>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
-<section class="sec sec--border">
-<div class="container split">
-<div>
-<form id="cf" action="#" method="POST" novalidate>
-<div class="frow">
-<div class="fgrp"><label for="fn" class="flbl">First name</label><input type="text" id="fn" name="fn" class="finp" required autocomplete="given-name"></div>
-<div class="fgrp"><label for="ln" class="flbl">Last name</label><input type="text" id="ln" name="ln" class="finp" required autocomplete="family-name"></div>
-</div>
-<div class="fgrp"><label for="em" class="flbl">Email</label><input type="email" id="em" name="em" class="finp" required autocomplete="email"></div>
-<div class="fgrp"><label for="int" class="flbl">I&#8217;m interested in</label>
-<select id="int" name="int" class="fsel">
-<option value="" disabled selected>Select an option</option>
-<option value="coaching">1:1 Coaching</option>
-<option value="group">Group Programmes</option>
-<option value="digital">Digital Training</option>
-<option value="workshops">Lectures &amp; Workshops</option>
-<option value="youth">Youth / Senior Programmes</option>
-<option value="other">Something else</option>
-</select></div>
-<div class="fgrp"><label for="msg" class="flbl">Message</label><textarea id="msg" name="msg" class="ftxa" placeholder="Tell us about where you are and what you&#8217;re looking for."></textarea></div>
-<button type="submit" class="btn btn--dark">Send message</button>
-</form>
-<div id="fs" style="display:none;padding:var(--space-lg) 0">
-<h3 style="font-family:var(--font-display);font-weight:700;font-size:1.5rem;margin-bottom:var(--space-sm)">Message sent.</h3>
-<p class="prose">Thank you. We&#8217;ll be in touch within 48 hours.</p>
-</div>
-</div>
-<div>
-<div style="padding:var(--space-lg);background:var(--pitch);color:var(--chalk-line);margin-bottom:var(--space-md)">
-<p style="font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--summer-tape);margin-bottom:var(--space-sm)">Direct</p>
-<h3 style="font-family:var(--font-display);font-weight:700;font-size:1.25rem;margin-bottom:var(--space-sm)">Prefer email?</h3>
-<p style="font-size:.9375rem;line-height:1.7;color:rgba(249,247,239,.6);margin-bottom:var(--space-sm)">Reach Jo directly at:</p>
-<a href="/cdn-cgi/l/email-protection#234b464f4f4c6353514c4946405716130d404c0d5648" style="color:var(--summer-tape);font-weight:600;font-size:1rem"><span class="__cf_email__" data-cfemail="0f676a6363604f7f7d60656a6c7b3a3f216c60217a64">[email&#160;protected]</span></a>
-</div>
-<div style="padding:var(--space-lg);border:1px solid var(--divider)" id="newsletter">
-<p style="font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--steel-breath);margin-bottom:var(--space-sm)">Newsletter</p>
-<h3 style="font-family:var(--font-display);font-weight:700;font-size:1.25rem;margin-bottom:var(--space-sm);color:var(--pitch)">Stay informed.</h3>
-<p style="font-size:.9375rem;line-height:1.7;color:var(--steel-breath);margin-bottom:var(--space-md)">New pathways, articles, and updates. No noise. Monthly.</p>
-<div style="display:flex;gap:.5rem"><input type="email" placeholder="Your email" class="finp" style="flex:1" aria-label="Email for newsletter"><button class="btn btn--primary" style="padding:.875rem 1.5rem">Subscribe</button></div>
-</div>
-<div style="padding:var(--space-lg) 0">
-<p style="font-size:.6875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--steel-breath);margin-bottom:var(--space-sm)">Location</p>
-<p style="font-size:1rem;line-height:1.7;color:var(--pitch)">Cheltenham, Gloucestershire<br>United Kingdom</p>
-</div>
-</div>
-</div>
-</section>
+<nav class="menu" id="menu" aria-label="Site menu">
+  <ul>
+    <li><a href="/story.html">Our Story</a></li>
+    <li><a href="/programmes.html">Programmes</a></li>
+    <li><a href="/#values">Values</a></li>
+    <li><a href="/#faq">FAQ</a></li>
+    <li><a href="/contact.html">Get Started</a></li>
+  </ul>
+  <p class="menu__meta">Cheltenham, Gloucestershire</p>
+</nav>
+<!-- /p50:nav -->
+
+<main id="main">
+
+  <header class="container page-hdr" aria-labelledby="page-title" style="padding-bottom: clamp(32px, 5vw, 56px)">
+    <p class="ledger-index"><span class="no">01</span> / Get in touch</p>
+    <div class="page-hdr__inner">
+      <h1 class="display" id="page-title">Start a conversation.</h1>
+      <p class="lede">Looking for 1:1 coaching, a group programme, or just want to ask a question? We'd like to hear from you.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top: 0" aria-label="Contact form and details">
+    <div class="container">
+      <div class="grid">
+        <div class="contact__form">
+          <form id="cf" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY_PLACEHOLDER">
+            <input type="hidden" name="subject" value="New enquiry from project50.uk">
+            <input type="hidden" name="from_name" value="Project 50 website">
+            <input type="hidden" name="redirect" value="https://www.project50.uk/contact.html?sent=1">
+            <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="field-row">
+              <div class="field">
+                <label for="first_name">First name</label>
+                <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="last_name">Last name</label>
+                <input type="text" id="last_name" name="last_name" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <fieldset class="field" style="border: 0; padding: 0">
+              <legend style="font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 8px">I'm interested in</legend>
+              <div class="pills">
+                <label><input type="radio" name="interest" value="1:1 Coaching" required>1:1 Coaching</label>
+                <label><input type="radio" name="interest" value="Group Programmes">Group Programmes</label>
+                <label><input type="radio" name="interest" value="Digital Training">Digital Training</label>
+                <label><input type="radio" name="interest" value="Lectures &amp; Workshops">Lectures &amp; Workshops</label>
+                <label><input type="radio" name="interest" value="Youth / Senior Programmes">Youth / Senior</label>
+                <label><input type="radio" name="interest" value="Something else">Something else</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button class="btn btn--pitch" type="submit">Send message</button>
+          </form>
+
+          <div class="form-status form-status--ok" id="fs" hidden role="status">
+            <hr class="tape-rule">
+            <h3>Message sent.</h3>
+            <p class="muted">Thank you. We'll be in touch within 48 hours.</p>
+          </div>
+          <p class="form-status form-status--err" id="fe" hidden role="alert">Something went wrong sending your message. Please email us directly at <a href="mailto:hello@project50.co.uk">hello@project50.co.uk</a>.</p>
+        </div>
+
+        <aside class="contact__aside">
+          <div class="aside-card">
+            <h3>What happens next</h3>
+            <ol class="steps">
+              <li>We reply within 48 hours.</li>
+              <li>A short call about where you are.</li>
+              <li>A structured plan, built for you.</li>
+            </ol>
+          </div>
+          <div class="aside-card">
+            <h3>Prefer email?</h3>
+            <p>Reach Jo directly at <a class="text-link" href="mailto:hello@project50.co.uk">hello@project50.co.uk</a></p>
+          </div>
+          <div class="aside-card" id="newsletter">
+            <h3>Stay informed.</h3>
+            <p>New pathways, articles, and updates. No noise. Monthly.</p>
+            <form id="nf" action="https://api.web3forms.com/submit" method="POST" class="newsletter-inline">
+              <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY_PLACEHOLDER">
+              <input type="hidden" name="subject" value="Newsletter signup - project50.uk">
+              <input type="hidden" name="from_name" value="Project 50 website">
+              <input type="hidden" name="redirect" value="https://www.project50.uk/contact.html?nl=1#newsletter">
+              <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="field" style="flex: 1; margin: 0">
+                <label class="sr-only" for="nl-email">Email address</label>
+                <input type="email" id="nl-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+              <button class="btn btn--pitch" type="submit">Subscribe</button>
+            </form>
+            <p class="form-status form-status--ok" id="ns" hidden role="status">You're on the list.</p>
+            <p class="form-status form-status--err" id="ne" hidden role="alert">That didn't go through. Try again, or email <a href="mailto:hello@project50.co.uk">hello@project50.co.uk</a>.</p>
+          </div>
+          <div class="aside-card">
+            <h3>Location</h3>
+            <p>Cheltenham, Gloucestershire<br>United Kingdom</p>
+            <p style="margin-top: 8px">Digital coaching available UK-wide.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
 </main>
-<footer class="footer" role="contentinfo">
-<div class="container">
-<div class="footer__inner">
-<div><p class="footer__logo">Project<span>50</span></p><p class="footer__tagline">Strength for life. Evidence-led coaching built to last decades, not weeks.</p></div>
-<div class="footer__cols">
-<div class="footer__col"><p class="footer__col-title">Platform</p><a href="programmes.html#coaching">1:1 Coaching</a><a href="programmes.html#group">Group Programmes</a><a href="programmes.html#digital">Digital Training</a><a href="programmes.html#workshops">Workshops</a></div>
-<div class="footer__col"><p class="footer__col-title">About</p><a href="story.html">Our Story</a><a href="index.html#values">Values</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div>
-<div class="footer__col"><p class="footer__col-title">Connect</p><a href="/cdn-cgi/l/email-protection#4d25282121220d3d3f2227282e39787d632e22633826">Email</a><a href="contact.html#newsletter">Newsletter</a></div>
-</div>
-</div>
-<div class="footer__bottom"><p class="footer__copy">&#169; 2026 Project 50. All rights reserved.</p><div class="footer__legal"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
-</div>
+
+<!-- p50:footer -->
+<footer class="footer surface-pitch">
+  <div class="container">
+    <div class="grid footer__grid">
+      <div class="footer__brand">
+        <img src="/assets/img/logo-wordmark.svg" alt="Project 50" width="709" height="160">
+        <p>Strength for life. Evidence-led coaching built to last decades, not weeks.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Platform</p>
+        <a href="/programmes.html#coaching">1:1 Coaching</a>
+        <a href="/programmes.html#group">Group Programmes</a>
+        <a href="/programmes.html#digital">Digital Training</a>
+        <a href="/programmes.html#workshops">Workshops</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">About</p>
+        <a href="/story.html">Our Story</a>
+        <a href="/#values">Values</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Connect</p>
+        <a href="mailto:hello@project50.co.uk">Email</a>
+        <a href="/contact.html#newsletter">Newsletter</a>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>&copy; 2026 Project 50. All rights reserved.</p>
+      <p><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
+    </div>
+  </div>
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var nav=document.querySelector('.nav');window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>80)},{passive:true});
-    var t=document.querySelector('.nav__toggle'),m=document.getElementById('mm');t.addEventListener('click',function(){var o=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!o));m.classList.toggle('open');document.body.style.overflow=o?'':'hidden'});m.querySelectorAll('a').forEach(function(l){l.addEventListener('click',function(){t.setAttribute('aria
+<script defer src="/assets/js/p50.js"></script>
+<script defer src="/analytics.js"></script>
+<!-- /p50:footer -->
+
+</body>
+</html>

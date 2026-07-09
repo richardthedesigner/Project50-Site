@@ -1,0 +1,12 @@
+{
+  "name": "project50-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "stamp": "node build.mjs",
+    "images": "node scripts/images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.0"
+  }
+}
